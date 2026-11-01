@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#000000">
+
+  <title>Ruhul Exe – Official Website | Funny Shorts, Comedy &amp; Desi Moments</title>
+  <meta name="description" content="Official website of Ruhul Exe: funny shorts, Hindi comedy, comment replies and desi moments. Watch the latest videos, check live streams and subscribe on YouTube.">
+  <meta name="keywords" content="Ruhul Exe, Ruhul Byte, funny shorts, hindi comedy, desi comedy, comment reply, indian comedy, youtube shorts, funny videos">
+  <meta name="author" content="Ruhul Exe">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+
+  <!-- IMPORTANT: replace with your real GitHub Pages address (see README.md) -->
+  <link rel="canonical" href="https://YOUR-USERNAME.github.io/ruhul-exe/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ruhul Exe">
+  <meta property="og:title" content="Ruhul Exe – Official Website">
+  <meta property="og:description" content="Funny shorts, Hindi comedy and desi moments. Latest videos, live streams and more.">
+  <meta property="og:url" content="https://YOUR-USERNAME.github.io/ruhul-exe/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Ruhul Exe – Official Website">
+  <meta name="twitter:description" content="Funny shorts, Hindi comedy and desi moments. Latest videos, live streams and more.">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Unbounded:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "Ruhul Exe",
+        "url": "https://YOUR-USERNAME.github.io/ruhul-exe/",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "Person",
+        "name": "Ruhul Exe",
+        "jobTitle": "YouTube creator",
+        "url": "https://YOUR-USERNAME.github.io/ruhul-exe/",
+        "sameAs": ["https://www.youtube.com/@ruhulexe"]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" id="nav">
+    <div class="wrap nav-inner">
+      <a class="logo" href="#home" aria-label="Ruhul Exe home">
+        <span class="logo-mark" aria-hidden="true">R</span>
+        <span class="logo-text">RUHUL<b>.EXE</b></span>
+      </a>
+
+      <nav id="menu" class="menu" aria-label="Main">
+        <a href="#home" data-link>Home</a>
+        <a href="#videos" data-link>Latest Videos</a>
+        <a href="#live" data-link>Live</a>
+        <a href="#about" data-link>About</a>
+        <a href="#community" data-link>Community</a>
+        <a href="#contact" data-link>Contact</a>
+        <a class="btn btn-primary btn-sm menu-cta" href="https://youtube.com/@ruhulexe?sub_confirmation=1" target="_blank" rel="noopener">Subscribe Now</a>
+      </nav>
+
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HOME -->
+    <section class="hero" id="home">
+      <div class="wrap">
+        <div class="window">
+          <div class="window-bar">
+            <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="window-title">ruhul.exe</span>
+            <span class="window-state"><span class="pulse"></span>running</span>
+          </div>
+          <div class="window-body">
+            <p class="hero-name">RUHUL<b>.EXE</b></p>
+            <h1>Welcome to the Official Ruhul Exe Website</h1>
+            <p class="hero-sub">Funny shorts, Hindi comedy, comment replies and desi moments. New videos show up here straight from the channel.</p>
+
+            <div class="boot" aria-hidden="true">
+              <p class="boot-line l1">&gt; loading funny_videos.dll … ok</p>
+              <p class="boot-line l2">&gt; loading desi_moments.dll … ok</p>
+              <p class="boot-line l3">&gt; status: ready<span class="cursor"></span></p>
+            </div>
+
+            <div class="cta-row">
+              <a class="btn btn-primary" href="https://youtube.com/@ruhulexe?sub_confirmation=1" target="_blank" rel="noopener">Subscribe Now</a>
+              <a class="btn btn-ghost" href="#videos">Watch latest videos</a>
+            </div>
+
+            <dl class="stats">
+              <div class="stat" id="subStat" hidden>
+                <dt>Subscribers</dt>
+                <dd id="subCount">–</dd>
+              </div>
+              <div class="stat" id="lastStat" hidden>
+                <dt>Latest upload</dt>
+                <dd id="lastUpload">–</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LATEST VIDEOS -->
+    <section class="section" id="videos">
+      <div class="wrap">
+        <div class="head">
+          <h2>Latest videos</h2>
+          <p>Pulled automatically from the Ruhul Exe YouTube channel.</p>
+        </div>
+
+        <div class="player" id="player">
+          <div class="player-frame" id="playerFrame">
+            <div class="skeleton" aria-hidden="true"></div>
+          </div>
+          <p class="player-title" id="playerTitle" aria-live="polite"></p>
+        </div>
+
+        <div class="grid" id="videoGrid" aria-live="polite"></div>
+        <div class="notice" id="videoError" hidden>
+          <p>The latest videos could not be loaded right now.</p>
+          <div class="cta-row">
+            <button class="btn btn-primary btn-sm" id="videoRetry" type="button">Try again</button>
+            <a class="btn btn-ghost btn-sm" href="https://www.youtube.com/@ruhulexe/videos" target="_blank" rel="noopener">Open on YouTube</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIVE -->
+    <section class="section section-alt" id="live">
+      <div class="wrap">
+        <div class="head">
+          <h2>Live streaming</h2>
+          <p>This section checks the channel and updates by itself every two minutes.</p>
+        </div>
+
+        <div class="live-card" id="liveCard" data-state="checking">
+          <div class="live-status">
+            <span class="live-badge" id="liveBadge"><span class="pulse"></span><span id="liveBadgeText">Checking…</span></span>
+          </div>
+          <div class="live-body" id="liveBody">
+            <p class="live-msg">Checking whether Ruhul Exe is live…</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="wrap about">
+        <div class="head">
+          <h2>About Ruhul Exe</h2>
+        </div>
+        <div class="about-text">
+          <p>Ruhul Exe is a YouTube creator making funny videos, comedy shorts and relatable desi moments in Hindi. The channel is built around quick laughs: sharp comment replies, everyday situations and trending ideas, told in a style that is easy to watch and easy to share.</p>
+          <p>Every video is made to keep you smiling in under a minute. If a comment makes the team laugh, it might become the next video, so the audience is part of the show.</p>
+          <p>New uploads arrive regularly. Subscribe, turn on notifications and join the family.</p>
+        </div>
+        <ul class="chips" aria-label="Content types">
+          <li>Funny shorts</li>
+          <li>Hindi comedy</li>
+          <li>Comment replies</li>
+          <li>Desi moments</li>
+          <li>Trending content</li>
+        </ul>
+        <p class="about-collab">Brands and creators: for collaborations write to <a href="mailto:Bloggerruhul078@gmail.com">Bloggerruhul078@gmail.com</a>.</p>
+      </div>
+    </section>
+
+    <!-- COMMUNITY -->
+    <section class="section section-alt" id="community">
+      <div class="wrap">
+        <div class="head">
+          <h2>Community</h2>
+          <p>Posts, updates and polls from Ruhul Exe live on the YouTube Community tab.</p>
+        </div>
+        <div class="posts" id="posts"></div>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://www.youtube.com/@ruhulexe/community" target="_blank" rel="noopener">Open community posts</a>
+          <a class="btn btn-ghost" href="https://www.youtube.com/@ruhulexe" target="_blank" rel="noopener">Visit YouTube channel</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="wrap">
+        <div class="head">
+          <h2>Contact and social media</h2>
+          <p>For business and collaboration, send a message. For everything else, find Ruhul Exe below.</p>
+        </div>
+
+        <div class="contact-grid">
+          <form class="form" id="contactForm" novalidate>
+            <label for="cName">Your name</label>
+            <input id="cName" name="name" type="text" autocomplete="name" required>
+
+            <label for="cSubject">Subject</label>
+            <input id="cSubject" name="subject" type="text" value="Collaboration" required>
+
+            <label for="cMsg">Message</label>
+            <textarea id="cMsg" name="message" rows="5" required></textarea>
+
+            <p class="form-error" id="formError" role="alert" hidden></p>
+            <button class="btn btn-primary" type="submit">Send email</button>
+            <p class="form-note">This opens your email app with the message ready to send to Bloggerruhul078@gmail.com.</p>
+          </form>
+
+          <div class="social">
+            <ul class="social-list" id="socialList">
+              <li><a href="https://www.youtube.com/@ruhulexe" target="_blank" rel="noopener"><span class="s-ico">▶</span>YouTube<small>@ruhulexe</small></a></li>
+              <li><a href="mailto:Bloggerruhul078@gmail.com"><span class="s-ico">✉</span>Email<small>Bloggerruhul078@gmail.com</small></a></li>
+            </ul>
+            <div class="cta-row">
+              <button class="btn btn-ghost btn-sm" id="shareBtn" type="button">Share this website</button>
+            </div>
+            <p class="form-note" id="shareNote" role="status" aria-live="polite"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <a class="logo" href="#home" aria-label="Back to top">
+        <span class="logo-mark" aria-hidden="true">R</span>
+        <span class="logo-text">RUHUL<b>.EXE</b></span>
+      </a>
+      <p>© <span id="year">2026</span> Ruhul Exe. Official website.</p>
+      <a class="btn btn-ghost btn-sm" href="https://youtube.com/@ruhulexe?sub_confirmation=1" target="_blank" rel="noopener">Subscribe Now</a>
+    </div>
+  </footer>
+
+  <noscript>
+    <div class="wrap" style="padding:24px 20px">
+      <p>JavaScript is needed to load the latest videos. You can always watch Ruhul Exe at
+      <a href="https://www.youtube.com/@ruhulexe">youtube.com/@ruhulexe</a>.</p>
+    </div>
+  </noscript>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
